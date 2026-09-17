@@ -5,7 +5,7 @@
   justify-content: center;
   min-height: 60vh;
   text-align: center;
-  color: var(--ion-color-step-600, #666);
+  color: var(--ion-color-medium, #666);
   padding: 24px;
 }
 
@@ -115,6 +115,14 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+.detalle-card ion-list {
+  background: transparent;
+}
+
+.detalle-card ion-item {
+  --background: transparent;
+}
+
 .detalle-header-top {
   display: flex;
   justify-content: space-between;
@@ -127,7 +135,8 @@
   justify-content: space-between;
   margin: 10px 0 16px;
   padding: 10px 14px;
-  background: var(--ion-color-step-100, #f7fafc);
+  background: var(--ion-background-color-step-100, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08));
+  border: 1px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08);
   border-radius: 12px;
 }
 
@@ -152,13 +161,13 @@
 .clima-desc {
   text-transform: capitalize;
   font-size: 0.95rem;
-  color: var(--ion-color-step-600, #4a5568);
+  color: var(--ion-color-medium, #718096);
   font-weight: 500;
 }
 
 .depto-indicador-ayuda {
   font-size: 0.85rem;
-  color: var(--ion-color-step-500, #718096);
+  color: var(--ion-color-medium, #718096);
   margin-top: 8px;
   text-align: center;
 }
