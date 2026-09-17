@@ -1,3 +1,5 @@
-// Reemplaza esta clave por la tuya, generada gratis en https://openweathermap.org/api
-export const OPEN_WEATHER_API_KEY = 'ca1cd42f9e0f1420d091c8ff6720b660';
+// La API key se lee desde .env.local (nunca se sube al repositorio).
+// Cada integrante del equipo debe crear su propio .env.local con su propia key.
+// Ver .env.example como plantilla.
+export const OPEN_WEATHER_API_KEY = import.meta.env.VITE_OPEN_WEATHER_API_KEY as string;
 export const OPEN_WEATHER_BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
